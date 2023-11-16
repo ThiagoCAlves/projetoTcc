@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Três Quadros</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4e54c8, #8f94fb, #4e54c8);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-button {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .side-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .side-button {
+            background-color: #fff;
+            padding: 10px;
+            flex: 1;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .notification-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .profile-image-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="notification-icon">&#9888;</div>
+    
+    <div class="profile-image-container">
+        <img class="profile-image" src="sua-imagem-aqui.jpg" alt="Imagem do Perfil">
+    </div>
+
+    <div class="button-container">
+        <div class="main-button">
+            <h2>Botão Principal</h2>
+            <p>Conteúdo do botão principal...</p>
+        </div>
+
+        <div class="side-buttons">
+            <div class="side-button">
+                <h2>Botão Lateral 1</h2>
+                <p>Conteúdo do botão lateral 1...</p>
+            </div>
+            
+            <div class="side-button">
+                <h2>Botão Lateral 2</h2>
+                <p>Conteúdo do botão lateral 2...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

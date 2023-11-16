@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Cliente</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4e54c8, #8f94fb, #4e54c8);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .step {
+            width: 20%;
+            padding: 10px;
+            background-color: #4e54c8;
+            color: #fff;
+            border-radius: 4px;
+            margin: 0 10px;
+        }
+
+        .main-container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Etapa do Cliente</h2>
+        <div class="steps-container">
+            <div class="step">Etapa 1</div>
+            <div class="step">Etapa 2</div>
+            <div class="step">Etapa 3</div>
+            <div class="step">Etapa 4</div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Aqui será carregado o conteúdo das etapas listadas -->
+        <h3>Conteúdo da Etapa Atual</h3>
+        <p>Descrição da etapa atual...</p>
+    </div>
+</body>
+</html>
